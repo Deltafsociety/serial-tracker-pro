@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rustc --version)",
+      "Bash(cargo --version)",
+      "Read(//home/delta/.local/share/**)",
+      "Bash(grep -oiE 'href=\"[^\"]*s[0-9]{1,2}e[0-9]{1,2}[^\"]*\"' ~/.local/share/recently-used.xbel)",
+      "Bash(grep -ociE 'href=\"[^\"]*s[0-9]{1,2}e[0-9]{1,2}' ~/.local/share/recently-used.xbel)",
+      "Bash(cargo init *)",
+      "Bash(cargo search *)",
+      "Bash(cargo build *)",
+      "Bash(./target/debug/stpro --list)",
+      "Bash(identify /tmp/stpro2.png)",
+      "Bash(convert /tmp/stpro2.png -crop '290x175+0+17' +repage /tmp/stpro_crop.png)",
+      "Bash(identify /tmp/stpro_crop.png)",
+      "Bash(magick stpro2.png -crop '640x420+0+15' +repage stpro_crop.png)",
+      "Bash(magick stpro_crop.png -resize 200% stpro_crop2.png)",
+      "Bash(identify stpro_crop2.png)",
+      "Bash(magick /tmp/stpro3.png -crop '1920x1080+1920+0' +repage /tmp/stpro_right.png)",
+      "Bash(identify /tmp/stpro_right.png)",
+      "Bash(magick /tmp/s4.png -crop '1920x1080+0+0' +repage /tmp/s4_left.png)",
+      "Bash(magick s5_l.png -crop '760x190+55+88' +repage cards.png)",
+      "Bash(magick cards.png -resize 220% cards2.png)",
+      "Bash(magick s5_l.png -crop '800x150+55+150' +repage cards.png)",
+      "Bash(magick cards.png -resize 200% cards2.png)",
+      "Bash(identify cards2.png)",
+      "Bash(magick s5_l.png -crop '480x120+58+232' +repage c.png)",
+      "Bash(magick c.png -resize 280% c2.png)",
+      "Bash(/home/delta/series-tracker/target/release/stpro --list)"
+    ]
+  }
+}

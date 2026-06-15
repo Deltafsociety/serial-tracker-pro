@@ -1,0 +1,13 @@
+[package]
+name = "stpro"
+version = "0.1.0"
+edition = "2021"
+description = "STPRO — Series Tracker Pro: tracks the shows you watch from your recent files"
+
+[dependencies]
+eframe = "0.29"
+regex = "1"
+
+[profile.release]
+opt-level = 3
+lto = true
